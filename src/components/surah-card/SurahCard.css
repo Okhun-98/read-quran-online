@@ -3,22 +3,38 @@
     display: flex;
     justify-content: space-between;
     height: 50px;
+    border: 0.5px solid rgb(231, 225, 225);
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.surah-card:hover {
+    border-color: rgb(158, 233, 208);
 }
 
 .surah-id {
     margin: 0px;
-    width: 10%;
+    width: 15%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .surah-data {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 85%;
     height: 100%;
 }
 
 .surah-span {
-    width: 25%;
-    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
+.span-right {
+    text-align: right;
 }
