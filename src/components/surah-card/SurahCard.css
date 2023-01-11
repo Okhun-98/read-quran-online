@@ -1,0 +1,24 @@
+.surah-card {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.surah-id {
+    margin: 0px;
+    width: 10%;
+    height: 100%;
+}
+
+.surah-data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+}
+
+.surah-span {
+    width: 25%;
+    display: flex;
+}
