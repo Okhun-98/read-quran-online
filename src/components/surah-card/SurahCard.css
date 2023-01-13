@@ -12,6 +12,7 @@
 
 .surah-card:hover {
     border-color: rgb(158, 233, 208);
+    background-color: rgba(127, 255, 212, 0.079);
 }
 
 .surah-id {
@@ -37,4 +38,21 @@
 
 .span-right {
     text-align: right;
+}
+
+.span-name {
+    font-size: 13px;
+    color: rgb(41, 37, 37);
+}
+
+.span-top {
+    font-weight: bold;
+}
+
+.span-hover:hover {
+    color: blueviolet;
+}
+
+.surah-id:hover {
+    color: blueviolet;
 }
