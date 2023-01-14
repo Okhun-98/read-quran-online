@@ -8,11 +8,21 @@
     border-radius: 5px;
     padding: 8px;
     cursor: pointer;
+    color: inherit;
+    text-decoration: none;
 }
 
 .surah-card:hover {
     border-color: rgb(158, 233, 208);
     background-color: rgba(127, 255, 212, 0.079);
+}
+
+.surah-card:hover .span-hover {
+    color: rgb(72, 163, 93);
+}
+
+.surah-card:hover .surah-id {
+    color: rgb(72, 163, 93);
 }
 
 .surah-id {
@@ -47,12 +57,4 @@
 
 .span-top {
     font-weight: bold;
-}
-
-.span-hover:hover {
-    color: blueviolet;
-}
-
-.surah-id:hover {
-    color: blueviolet;
 }
