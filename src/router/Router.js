@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { DetailSurah } from "../pages/detail-surah/Detail-surah"
+import { DetailSurah } from "../pages/detail-surah/DetailSurah"
 import { Home } from "../pages/home/Home"
 
 export const Router = () => {

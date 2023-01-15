@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
+import "./DetailSurah.css"
 
 
 export const DetailSurah = () => {
@@ -17,13 +18,17 @@ export const DetailSurah = () => {
         setSurah(data)
     }
     return (
-        <div>
-            <h1>{surah?.transliteration}</h1>
+        <div className="surah-detail">
+            <div className="header-detail">
+                <Link to="/" className="btn-detail-back">{"< back"} </Link>
+                <h1 className="titel-detail-translate">{surah?.transliteration}</h1>
+            </div>
+            <h1 className="title-detail-orginal">سورة {surah?.name}</h1>
             {surah?.verses.map((ayat) => {
                 return (
-                    <div>
-                        <h2 className="surah-right">{ayat?.text}</h2>
-                        <h3 className="surah-left">{ayat?.translation}</h3>
+                    <div className="ayat-detail">
+                        <h2 className="ayat-orginal">{ayat?.text}</h2>
+                        <h3 className="ayat-translation">{ayat?.translation}</h3>
                     </div>
                 )
             })}

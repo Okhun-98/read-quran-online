@@ -1,0 +1,34 @@
+.surah-detail {
+    padding: 0px 100px 100px 100px;
+    background-color: bisque;
+}
+
+.header-detail {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.btn-detail-back {
+    color: inherit;
+    text-decoration: none;
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.titel-detail-translate {}
+
+.title-detail-orginal {
+    text-align: center;
+}
+
+.ayat-detail {
+    border-bottom: 0.5px solid gray;
+    padding: 50px 0px;
+}
+
+.ayat-orginal {
+    text-align: right;
+}
+
+.ayat-translation {}
