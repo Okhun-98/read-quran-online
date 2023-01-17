@@ -63,13 +63,14 @@
     .surah-card {
         width: 300px;
         align-items: center;
-        font-size: 10px;
+        font-size: 15px;
         display: flex;
     }
 
     @media screen and (max-width: 400px) {
         .surah-card {
             width: 400px;
+            font-size: 15px;
 
         }
     }
