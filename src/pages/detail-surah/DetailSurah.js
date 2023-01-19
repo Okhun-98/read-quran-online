@@ -17,7 +17,7 @@ export const DetailSurah = () => {
     const getSurah = async () => {
         try {
             setLoader(true)
-            const response = await fetch(`https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/en/${params?.id}.json`)
+            const response = await fetch(`https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/ru/${params?.id}.json`)
             const data = await response.json()
             console.log(data)
             setSurah(data)
@@ -36,7 +36,7 @@ export const DetailSurah = () => {
     } else return (
         <div className="surah-detail">
             <div className="header-detail">
-                <Link to="/" className="btn-detail-back">{"< back"} </Link>
+                <Link to="/" className="btn-detail-back"><i class="fa fa-arrow-left"></i> </Link>
                 <h1 className="titel-detail-translate">{surah?.transliteration}</h1>
             </div>
             <h1 className="title-detail-orginal">سورة {surah?.name}</h1>

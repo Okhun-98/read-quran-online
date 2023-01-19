@@ -9,7 +9,7 @@ export const Home = () => {
     useEffect(() => { getSurahs() }, [])
 
     const getSurahs = async () => {
-        const response = await fetch("https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_en.json")
+        const response = await fetch("https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/quran_ru.json")
         const data = await response.json()
         setSurahs(data)
     }

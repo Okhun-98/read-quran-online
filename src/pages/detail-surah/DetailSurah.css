@@ -14,12 +14,17 @@
     text-decoration: none;
     font-size: 32px;
     margin-right: 20px;
+    color: #20B2AA;
 }
 
-.titel-detail-translate {}
+.titel-detail-translate {
+    margin-left: 410px;
+
+}
 
 .title-detail-orginal {
     text-align: center;
+    color: #20B2AA;
 }
 
 .ayat-detail {
@@ -32,7 +37,7 @@
 }
 
 .ayat-translation {
-    color: #778899;
+    color: #2F4F4F;
 }
 
 .loader-detail {
@@ -43,9 +48,38 @@
     align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .surah-detail {
-        padding: 0px 30px;
+        padding: 0px 40px;
+    }
+
+    .header-detail {
+        padding: 10px 0px;
+    }
+
+    .titel-detail-translate {
+        font-size: 20px;
+        margin-left: 270px;
+    }
+
+    .btn-detail-back {
+        font-size: 30px;
+    }
+
+    .title-detail-orginal {
+        margin: 0px 0px;
+    }
+
+    .ayat-detail {
+        padding: 20px 0px;
+    }
+
+    .ayat-orginal {
+        font-size: 20px;
+    }
+
+    .ayat-translation {
+        font-size: 15px;
     }
 }
 
@@ -60,15 +94,16 @@
 
     .titel-detail-translate {
         font-size: 20px;
+        margin-left: 80px;
     }
 
     .btn-detail-back {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .title-detail-orginal {
         font-size: 30px;
-        margin: 10px 0px;
+        margin: 0px 0px;
     }
 
     .ayat-detail {
@@ -81,7 +116,7 @@
     }
 
     .ayat-translation {
-        font-size: 12px;
+        font-size: 14px;
         margin: 10px 0px;
     }
 }
