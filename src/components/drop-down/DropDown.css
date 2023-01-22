@@ -3,7 +3,6 @@
     right: 20px;
     top: 40px;
     z-index: 50;
-    margin-bottom: -20px;
     padding: 5px;
     border-color: rgb(72, 163, 93);
     border-radius: 5px;
@@ -14,3 +13,11 @@
 }
 
 .lan-option {}
+
+@media screen and (max-width: 400px) {
+    .lan-select {
+        right: 10px;
+        top: 20px;
+        padding: 2;
+    }
+}
