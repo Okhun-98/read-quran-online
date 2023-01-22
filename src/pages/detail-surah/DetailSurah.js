@@ -41,7 +41,7 @@ export const DetailSurah = () => {
         <div className="surah-detail">
             <div className="header-detail">
                 <Link to="/" className="btn-detail-back"><i class="fa fa-arrow-left"></i> </Link>
-                <h1 className="titel-detail-translate">{surah?.transliteration}</h1>
+                {/* <h1 className="titel-detail-translate">{surah?.transliteration}</h1> */}
             </div>
             <h1 className="title-detail-orginal">سورة {surah?.name}</h1>
             {surah?.verses.map((ayat) => {
