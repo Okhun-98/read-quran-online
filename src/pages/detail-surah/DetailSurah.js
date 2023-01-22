@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
 import "./DetailSurah.css"
 import { Rings } from 'react-loader-spinner'
+import { language } from "../../stores/languages"
 
 
 export const DetailSurah = () => {
@@ -9,24 +10,22 @@ export const DetailSurah = () => {
     const [surah, setSurah] = useState()
     const [loader, setLoader] = useState(true)
 
-
     useEffect(() => {
-        getSurah()
-    }, [])
+        language.subscribe((item) => {
+            getSurah(item?.lan)
+        })
+    }, [language])
 
-    const getSurah = async () => {
+    async function getSurah(lan) {
         try {
             setLoader(true)
-            const response = await fetch(`https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/ru/${params?.id}.json`)
+            const response = await fetch(`https://cdn.jsdelivr.net/npm/quran-json@3.1.2/dist/chapters/${lan}/${params?.id}.json`)
             const data = await response.json()
-            console.log(data)
             setSurah(data)
         } catch (error) {
             console.log(error)
         } finally {
-            setTimeout(() => {
-                setLoader(false)
-            }, 1000);
+            setLoader(false)
         }
 
     }

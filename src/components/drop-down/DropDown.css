@@ -1,0 +1,16 @@
+.lan-select {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    z-index: 50;
+    margin-bottom: -20px;
+    padding: 5px;
+    border-color: rgb(72, 163, 93);
+    border-radius: 5px;
+}
+
+.lan-select:focus {
+    outline: none;
+}
+
+.lan-option {}
