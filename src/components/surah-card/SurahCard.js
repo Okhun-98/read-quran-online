@@ -6,10 +6,10 @@ export const SurahCard = ({ surah }) => {
         <Link to={"/surah/" + surah?.transliteration + "/" + surah?.id} className="surah-card">
             <h3 className="surah-id">{surah?.id}</h3>
             <div className="surah-data">
-                <level className="surah-span span-left span-top">{surah?.transliteration}</level>
-                <level className="surah-span span-right span-name">{surah?.name}</level>
-                <level className="surah-span span-left span-name span-hover">{surah?.translation}</level>
-                <level className="surah-span span-right span-name span-hover">{surah?.total_verses} Ayahs</level>
+                <span className="surah-span span-left span-top">{surah?.transliteration}</span>
+                <span className="surah-span span-right span-name">{surah?.name}</span>
+                <span className="surah-span span-left span-name span-hover">{surah?.translation}</span>
+                <span className="surah-span span-right span-name span-hover">{surah?.total_verses} Ayahs</span>
             </div>
         </Link>
     )
