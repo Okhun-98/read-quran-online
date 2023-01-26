@@ -16,12 +16,10 @@ function App() {
     })
   }, [loader])
 
-  if (loading) {
-    return <div className="loader-detail"><Rings color="#00BFFF" height={80} width={80} />
-    </div>
-  } else return (
+  return (
     <BrowserRouter>
       <div className='app'>
+        {loading && <div className="loader"><Rings color="#00BFFF" height={80} width={80} /></div>}
         <DropDown />
         <Router />
       </div>
