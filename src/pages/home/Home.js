@@ -24,16 +24,18 @@ export const Home = () => {
         } catch (error) {
             console.log(error)
         } finally {
-            loader.setKey("loading", false)
+            setTimeout(() => {
+                loader.setKey("loading", false)
+            }, 500)
         }
     }
     return (
         <div className="home">
             <Banner />
             <div className="surahs">
-                {surahs?.map((surah) => {
+                {surahs?.length ? surahs?.map((surah) => {
                     return <SurahCard surah={surah} key={surah?.id} />
-                })}
+                }) : <h1 className="error-surahs">at the moment our servise not working please try again later...</h1>}
             </div>
         </div>
     )

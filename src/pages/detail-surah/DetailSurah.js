@@ -11,7 +11,9 @@ export const DetailSurah = () => {
 
     useEffect(() => {
         language.subscribe((item) => {
-            getSurah(item?.lan)
+            if (params?.id > 0 && params?.id < 115) {
+                getSurah(item?.lan)
+            }
         })
     }, [language])
 
@@ -24,7 +26,7 @@ export const DetailSurah = () => {
         } catch (error) {
             console.log(error)
         } finally {
-            loader.setKey("loading", false)
+            setTimeout(() => loader.setKey("loading", false), 500)
         }
 
     }
@@ -40,14 +42,14 @@ export const DetailSurah = () => {
                 {/* <h1 className="titel-detail-translate">{surah?.transliteration}</h1> */}
             </div>
             <h1 className="title-detail-orginal">سورة {surah?.name}</h1>
-            {surah?.verses.map((ayat, index) => {
+            {surah?.verses?.length ? surah?.verses.map((ayat, index) => {
                 return (
                     <div className="ayat-detail" key={index}>
                         <h2 className="ayat-orginal">{ayat?.text} <span className="arabic-number">{ConvertToArabicNumbers(ayat?.id)}</span></h2>
                         <h3 className="ayat-translation">{ayat?.translation}</h3>
                     </div>
                 )
-            })}
+            }) : (params?.id > 0 && params?.id < 115) ? <h1 className="error-surah-detaile">at the moment our servise not working please try again later...</h1> : <h1 className="error-surah-detaile">sorry you have to choose from 1-114...</h1>}
         </div>
     )
 }

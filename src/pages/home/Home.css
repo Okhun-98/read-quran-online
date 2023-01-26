@@ -4,3 +4,10 @@
     padding: 20px 10px 20px 10px;
     justify-content: space-around;
 }
+
+.error-surahs {
+    color: red;
+    margin-top: 100px;
+    text-transform: capitalize;
+    text-align: center;
+}
