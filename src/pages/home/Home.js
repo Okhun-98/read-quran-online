@@ -29,6 +29,7 @@ export const Home = () => {
             }, 500)
         }
     }
+
     return (
         <div className="home">
             <Banner />

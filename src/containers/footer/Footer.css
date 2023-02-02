@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: blanchedalmond;
+    padding: 30px;
+}
+
+.list-left {
+    inline-size: 30%;
+}
+
+.list-right {}

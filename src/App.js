@@ -5,6 +5,7 @@ import { DropDown } from './components/drop-down/DropDown';
 import { Rings } from 'react-loader-spinner'
 import { loader } from './stores/loader';
 import { useEffect, useState } from 'react';
+import { Footer } from './containers/footer/Footer';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         {loading && <div className="loader"><Rings color="#00BFFF" height={80} width={80} /></div>}
         <DropDown />
         <Router />
+        <Footer />
       </div>
     </BrowserRouter>
   );
