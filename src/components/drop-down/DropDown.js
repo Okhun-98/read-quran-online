@@ -12,6 +12,9 @@ export const DropDown = () => {
             <option className="lan-option" value="ru" >Русский</option>
             <option className="lan-option" value="tr" >Turkish</option>
             <option className="lan-option" value="en" >English</option>
+            <option className="lan-option" value="fr" >French</option>
+            <option className="lan-option" value="es" >Spanish</option>
+            <option className="lan-option" value="zh" >Chinese</option>
         </select>
     )
 }

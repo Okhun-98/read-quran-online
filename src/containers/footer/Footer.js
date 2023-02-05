@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
         <div className="footer">
             <div className="list-left">
-                <h1>Al-Quran</h1>
+                <h1 className="list-up">Al-Quran</h1>
                 <p>Read, study, and learn The Noble Quran.</p>
                 <p>Al-Quran.com is a Sadaqah Jariyah. We hope to make it easy for everyone to read, study, and learn The Noble Quran.</p>
             </div>

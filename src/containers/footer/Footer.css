@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     justify-content: space-around;
-    background-color: blanchedalmond;
+    background-color: rgb(125, 167, 167);
     padding: 30px;
 }
 
@@ -10,3 +10,23 @@
 }
 
 .list-right {}
+
+@media screen and (max-width: 800px) {
+    .footer {}
+}
+
+.list-up {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        font-size: 10px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .list-up {
+        font-size: 20px;
+    }
+}
